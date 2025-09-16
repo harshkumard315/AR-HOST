@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR-HOST - Bring AI agents into the real world</title>
+    <meta name="description" content="AR-HOST is an experimental platform for creators, educators, and businesses to deploy persistent AR hosts that can talk, guide, teach, or entertain in any physical location.">
+    <meta property="og:title" content="AR-HOST - Bring AI agents into the real world">
+    <meta property="og:description" content="Deploy persistent AR agents with AI-powered conversations in real-world spaces">
+    <meta property="og:type" content="website">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        background: #111827;
+        overflow-x: hidden;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      
+      @keyframes pulse-glow {
+        0%, 100% { 
+          opacity: 0.4;
+          transform: scale(1);
+        }
+        50% { 
+          opacity: 0.8;
+          transform: scale(1.1);
+        }
+      }
+      
+      .animate-pulse-glow {
+        animation: pulse-glow 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
